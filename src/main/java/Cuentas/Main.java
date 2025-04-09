@@ -1,7 +1,20 @@
 package Cuentas;
 
+/**
+ * Clase principal que contiene el metodo Main, para ejecutar el programa.
+ *
+ * Esta clase crea una cuenta bancaria y realiza operaciones, retirada e
+ * ingreso, utilizando el metodo operativa_cuenta
+ *
+ * @author jose
+ */
 public class Main {
 
+    /**
+     * main que ejecuta el metodo
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -13,6 +26,12 @@ public class Main {
         operativa_cuenta(cuenta1, 1000);
     }
 
+    /**
+     * Realiza operaciones de retirada e ingreso sobre la cuenta
+     *
+     * @param cuenta1 la cuenta en la que se hará las operaciones
+     * @param cantidad cantidad a retirar o ingresar
+     */
     private static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
         try {
             cuenta1.retirar(cantidad);
